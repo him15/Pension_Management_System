@@ -1,0 +1,99 @@
+nav {
+	background-color: black;
+}
+
+#navheading {
+	color: #DFA362;
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.icon-size {
+	font-size: 2rem;
+	vertical-align: middle;
+	color: #DFA362;
+}
+
+.logout {
+	font-size: 3rem;
+	vertical-align: middle;
+}
+
+a:hover .logout {
+	color: #DFA362;
+}
+
+#navname {
+	color: #fff3d4;
+}
+
+#hamburger {
+	color: #DFA362;
+}
+
+body {
+	background-image:
+		url("https://images.unsplash.com/photo-1561414927-6d86591d0c4f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=966&q=80");
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 100%;
+}
+
+#formheading {
+	color: #fff3d4;
+}
+
+.card {
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.gj-picker {
+	color: #976536;
+}
+
+.calendar {
+	color: #FFFFFF;
+}
+
+.form-control {
+	background-color: rgba(255, 255, 255, 0.5);
+	border: none;
+	font-size: 1.25rem;
+}
+
+.formlabel {
+	font-size: 1.25rem;
+}
+
+.mandatory {
+	color: #ffc107;
+}
+
+footer {
+	background-color: rgba(0, 0, 0, 0.8);
+	height: 3rem;
+	margin-top: 2%;
+	position: relative;
+	bottom: 0;
+	color: #fff3d4;
+}
+
+.tablefield {
+	color: #DFA362;
+}
+
+.tryagain:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.tryagain {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+button.input-group-append {
+	border: none;
+}

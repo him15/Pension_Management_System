@@ -1,0 +1,43 @@
+<p>ddashboard works!</p>
+<div class="bootstarp-wrapper">
+    <div class="container text-center mt">
+        <h1>Pension Disburement Dashboard</h1>
+        <form (ngSubmit)="onProcessPension()" class="form">
+            <div class="col-md-4">
+            <div class="form-group">
+            <input type="text" class="form-control" name="aadhaarNumber" [(ngModel)]="ProcessPensionInput.aadhaarNumber" placeholder="aadhaarNumber" required=""/>
+            </div> 
+            <div class="form-group">
+                <input type="text" class="form-control" name="pensionAmount" [(ngModel)]="ProcessPensionInput.pensionAmount" placeholder="pensionAmount" required=""/>
+            </div> 
+            <div class="form-group">
+                <input type="text" class="form-control" name="bankServiceCharge" [(ngModel)]="ProcessPensionInput.bankServiceCharge" placeholder="bankServiceCharge" required=""/>
+            </div> 
+            <div class="form-group">
+            <button type="submit" class="btn btn-info">processPension</button><br>
+            <button type="reset" class="btn btn-info">reset</button><br>
+            <span class="text-danger" style="color:red"></span>
+            </div>
+            </div>
+        </form>
+            {{ProcessPensionInput | json}}
+            <h3 ng-If="ProcessCode"> ProcessCode => {{ProcessCode}}</h3>
+            <br>
+            <div></div>
+        <form (ngSubmit)="ongetBankServiceCharge()" class="form">
+            <div class="col-md-4">
+            <div class="form-group">
+            <input type="text" class="form-control" name="bankName" [(ngModel)]="bankName" placeholder="bankName" required=""/>
+            </div> 
+            <div class="form-group">
+            <button type="submit" class="btn btn-info">getBankServiceCharge</button><br>
+            <button type="reset" class="btn btn-info">reset</button><br>
+            <span class="text-danger" style="color:red"></span>
+            </div>
+            </div>
+        </form>
+        {{bankName | json}}
+        <h3 ng-If="bankServiceCharge"> bankServiceCharge => {{bankServiceCharge}}</h3>
+    </div>
+    
+</div>
