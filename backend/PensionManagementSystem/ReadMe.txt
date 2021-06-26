@@ -2,10 +2,11 @@ Pod 1 MFPE
 Pension Management System
 
 Developed by:
-Samyuktha S
-Princi Kumari
-Shreya J B
-Ashish Kumar Sah
+Himanshu shivhare
+Khushagra sahu
+Saloni Mehra
+Deepansh
+Sumit 
 --------------------------------------------------------------------------------------------------
 Web Portal Access point: http://localhost:9096/
 
