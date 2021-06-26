@@ -1,3 +1,12 @@
+#TO-DO
+
+    1=> make a angular project 
+    2=> add replace your src folder with this src folder
+    3=> ng add @angular/material
+    4=> install authguard of name "auth" type "canactivate"
+    5=> make logout button (on click "localStorage.clear()" )
+    6=> make all necessary changes according to yo
+
 # PensionManagementSystem
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.5.
