@@ -1,0 +1,23 @@
+<p>Authorization works!</p>
+
+<div class="col-md-12">
+    <form (ngSubmit)="onSubmit()" class="form">
+    <div class="col-md-4">
+    <div class="form-group">
+    <input type="text" class="form-control" name="userid" [(ngModel)]="credentials.userid" placeholder="userID" required=""/>
+    </div> 
+    <div class="form-group">
+    <input type="text" class="form-control" name="uname" [(ngModel)]="credentials.uname" placeholder="username" required=""/>
+    </div> 
+    <div class="form-group">
+    <input type="password" class="form-control"  name="upassword" [(ngModel)]="credentials.upassword" placeholder="password" required=""/>
+    </div>
+    <div class="form-group">
+    <button type="submit" class="btn btn-info">Login</button><br>
+    <button type="reset" class="btn btn-info">reset</button><br>
+    <span class="text-danger" style="color:red"></span>
+    </div>
+    </div>
+    </form>
+    {{credentials | json}}
+    </div>
