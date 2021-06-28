@@ -1,23 +1,55 @@
-<p>Authorization works!</p>
 
-<div class="col-md-12">
+<div class="img"></div>
+<p>Authorization works!</p>
+<div class="container">
+    <div class="row text" >
+        <div class="col-md-4" >
+           
+    </div>
+<div class="col-md-6">
+    <h1 style="text-align: center;">LOG IN</h1>
+    <div style="border:2px solid;border-radius: 5%;margin: 30px;padding: 15px;background-color: whitesmoke;">
     <form (ngSubmit)="onSubmit()" class="form">
-    <div class="col-md-4">
-    <div class="form-group">
-    <input type="text" class="form-control" name="userid" [(ngModel)]="credentials.userid" placeholder="userID" required=""/>
+    
+        <div class="form-group row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+    <input type="text" class="form-control" name="userid" [(ngModel)]="credentials.userid" placeholder="USER ID" required=""/>
+    </div>
+    
+        <div class="col-md-2"></div>
+       </div>
+    <div class="form-group row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+    <input type="text" class="form-control" name="uname" [(ngModel)]="credentials.uname" placeholder="USERNAME" required=""/>
+    </div>
+    
+        <div class="col-md-2"></div>
     </div> 
+    <div class="form-group row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+    <input type="password" class="form-control"  name="upassword" [(ngModel)]="credentials.upassword" placeholder="PASSWORD" required=""/>
+</div><div class="col-md-2"></div>    
+</div>
     <div class="form-group">
-    <input type="text" class="form-control" name="uname" [(ngModel)]="credentials.uname" placeholder="username" required=""/>
-    </div> 
-    <div class="form-group">
-    <input type="password" class="form-control"  name="upassword" [(ngModel)]="credentials.upassword" placeholder="password" required=""/>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+    <button type="submit" class="btn btn-success">Login</button><br>
+</div>
+<div class="col-md-3">
+    <button type="reset" class="btn btn-success">reset</button><br>
+</div>
+<div class="col-md-1"></div>
+</div>
     </div>
-    <div class="form-group">
-    <button type="submit" class="btn btn-info">Login</button><br>
-    <button type="reset" class="btn btn-info">reset</button><br>
-    <span class="text-danger" style="color:red"></span>
-    </div>
-    </div>
+   
     </form>
     {{credentials | json}}
     </div>
+</div>
+    <div class="col-md-3"></div>
+</div>
+</div>

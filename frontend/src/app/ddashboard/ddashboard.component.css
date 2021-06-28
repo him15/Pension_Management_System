@@ -1,0 +1,45 @@
+.container{
+    background-image: url(bg1.jpg);
+    background-size: cover;
+}
+body, html {
+    height: 100%;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .bg-image {
+    /* The image used */
+    background-image: url("bg1.jpg");
+  
+    /* Add the blur effect */
+    filter: blur(20px);
+    -webkit-filter: blur(20px);
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Position text in the middle of the page/image */
+  .bg-text {
+    
+    color: black;
+    font-weight: bold;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 60%;
+    padding: 10px;
+    text-align: center;
+    margin-top: 70px;
+  }

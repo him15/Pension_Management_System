@@ -1,43 +1,82 @@
 <p>ddashboard works!</p>
-<div class="bootstarp-wrapper">
-    <div class="container text-center mt">
-        <h1>Pension Disburement Dashboard</h1>
-        <form (ngSubmit)="onProcessPension()" class="form">
-            <div class="col-md-4">
+<div class="bg-image"></div>
+
+
+    
+
+<div class="row bg-text">
+    
+    <h1 style="font-family: 'Times New Roman', Times, serif; font-weight: bolder; text-align: center;font-size: 50px;">Pension Disburement Dashboard</h1>
+
+    <div class="col-md-3"></div>
+
+    
+    <div class="col-md-6" style="border: 2px black solid;padding: 20px;justify-content: flex-end;padding: 20px;margin: 20px;background-color: whitesmoke;">
+        <form (ngSubmit)="onProcessPension()" class="form ">
+           
+           
             <div class="form-group">
-            <input type="text" class="form-control" name="aadhaarNumber" [(ngModel)]="ProcessPensionInput.aadhaarNumber" placeholder="aadhaarNumber" required=""/>
+                <label class="col-form-label" style="font-size: 20px;">Addhaar Number</label>
+            <input type="text" class="form-control" name="aadhaarNumber" [(ngModel)]="ProcessPensionInput.aadhaarNumber" placeholder="Enter Your Aadhaar Number" required=""/>
+            </div>
+            
+            <div class="form-group">
+                <label class="col-form-label" style="font-size: 20px;">Pension Amount</label>
+                <input type="text" class="form-control" name="pensionAmount" [(ngModel)]="ProcessPensionInput.pensionAmount" placeholder="Pension Amount" required=""/>
             </div> 
             <div class="form-group">
-                <input type="text" class="form-control" name="pensionAmount" [(ngModel)]="ProcessPensionInput.pensionAmount" placeholder="pensionAmount" required=""/>
-            </div> 
-            <div class="form-group">
+                <label class="col-form-label" style="font-size: 20px;">Bank Service Charge</label>
                 <input type="text" class="form-control" name="bankServiceCharge" [(ngModel)]="ProcessPensionInput.bankServiceCharge" placeholder="bankServiceCharge" required=""/>
             </div> 
             <div class="form-group">
-            <button type="submit" class="btn btn-info">processPension</button><br>
-            <button type="reset" class="btn btn-info">reset</button><br>
+                <div class="row">
+                    <div class="col-md-6">
+                
+            <button type="submit" class="btn btn-success" style="margin-top: 8px;">Process Pension</button><br></div>
+            <div class="col-md-6">
+            <button type="reset" class="btn btn-success" style="margin-top: 10px;">Reset</button><br>
+        </div>
             <span class="text-danger" style="color:red"></span>
             </div>
-            </div>
+        </div>
+            
         </form>
             {{ProcessPensionInput | json}}
             <h3 ng-If="ProcessCode"> ProcessCode => {{ProcessCode}}</h3>
             <br>
-            <div></div>
+    </div>
+   
+    {{bankName | json}}
+    <h2 ng-If="bankServiceCharge"><label style="font-weight: bolder;"> BankServiceCharge => {{bankServiceCharge}}</label></h2>
+    <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6" style="border: 2px black solid;padding: 20px;justify-content: flex-end;padding: 20px;margin: 20px;background-color: whitesmoke;">
         <form (ngSubmit)="ongetBankServiceCharge()" class="form">
-            <div class="col-md-4">
+          
             <div class="form-group">
+             <label style="font-size: 20px;margin: 14px;" >Bank Name</label>
             <input type="text" class="form-control" name="bankName" [(ngModel)]="bankName" placeholder="bankName" required=""/>
             </div> 
             <div class="form-group">
-            <button type="submit" class="btn btn-info">getBankServiceCharge</button><br>
-            <button type="reset" class="btn btn-info">reset</button><br>
-            <span class="text-danger" style="color:red"></span>
+                <div class="row">
+                    <div class="col-md-6">
+            <input type="submit"  style="margin: 5px;font-size: 16px;margin: 14px;" value="Get Bank Service Charge"><br></div>
+            
+                <div class="col-md-4">
+            <input type="reset"  style="margin: 5px;font-size: 16px;margin: 14px;" value="Reset"><br>
+           </div>
+
             </div>
             </div>
+        
+       
         </form>
-        {{bankName | json}}
-        <h3 ng-If="bankServiceCharge"> bankServiceCharge => {{bankServiceCharge}}</h3>
-    </div>
-    
+       
+   </div>
+
+    <div class="col-md-3"></div>
+</div>
+
+   
+
 </div>
